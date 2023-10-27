@@ -2,6 +2,7 @@ import axios from "axios";
 import { functions } from "lodash";
 const instance = axios.create({
   baseURL: "http://localhost:8080/",
+  withCredentials: true,
 });
 
 instance.defaults.withCredentials = true;
