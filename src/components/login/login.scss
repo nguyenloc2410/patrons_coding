@@ -1,0 +1,53 @@
+.red {
+  border: 4px red solid;
+}
+.green {
+  background-color: #42b72a !important;
+  color: white !important;
+}
+.border {
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+}
+.login_container {
+  height: 100vh;
+  background-image: url("/assets/login_background.jpeg");
+  background-size: cover;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  .login_right {
+    .brand {
+      font-size: 2.5rem;
+      color: white;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+  }
+  .login_content {
+    background-color: rgba($color: #272c49c9, $alpha: 0.3);
+    border-radius: 15px;
+    .forget_pass {
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .login_left {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    .brand {
+      font-size: 4.5rem;
+    }
+    .detail {
+      font-size: 30px;
+    }
+  }
+}

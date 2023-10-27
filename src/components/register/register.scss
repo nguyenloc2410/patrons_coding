@@ -1,0 +1,36 @@
+.register_container {
+  background-image: url("/assets/register_background.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.main_form {
+  border: groove;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    color: #a0bfbe73;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  background-color: transparent;
+  color: white;
+}
+.gender {
+  transform: scale(2);
+  margin-left: 1em;
+  margin-right: 1em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.inputsubmit {
+  text-align: end;
+}
+.green {
+  background-color: #42b72a !important;
+  color: white !important;
+}

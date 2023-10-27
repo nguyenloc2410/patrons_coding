@@ -1,0 +1,39 @@
+.navheader {
+  position: fixed;
+  width: 100vw;
+  background-color: #845ec2;
+  .navbar-brand {
+    font-size: 25px;
+  }
+  a {
+    color: whitesmoke !important;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .dropdown-item {
+    color: #845ec2 !important;
+  }
+  .dropdown-item:hover {
+    background-color: #d7e8f0;
+  }
+  .dropdown-menu.show {
+    top: 51px;
+  }
+  .btn.logout_btn {
+    color: #f3e269;
+    outline-color: #f3e269;
+    outline-style: solid;
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+  .logout_btn:hover {
+    background-color: #f3e269;
+    color: black;
+  }
+  .welcome_des {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
