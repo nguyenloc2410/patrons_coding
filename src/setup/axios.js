@@ -1,7 +1,7 @@
 import axios from "axios";
 import { functions } from "lodash";
 const instance = axios.create({
-  baseURL: "http://localhost:8080/",
+  baseURL: "https://coding-patrons-server.onrender.com",
   withCredentials: true,
 });
 
