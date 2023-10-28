@@ -1,6 +1,5 @@
 import { React, useState, createContext, useEffect } from "react";
 import { accountRefesh } from "../services/userService";
-import Cookies from "universal-cookie";
 
 const UserContext = createContext({
   isAuthentic: false,
@@ -8,7 +7,6 @@ const UserContext = createContext({
   account: {},
 });
 const UserProvider = ({ children }) => {
-  const cookies = new Cookies();
   const defaultData = {
     isLoading: true,
     isAuthentic: false,
@@ -49,7 +47,6 @@ const UserProvider = ({ children }) => {
 
   const loginContext = (userData) => {
     setUser({ ...userData, isLoading: false });
-    cookies.set("jwt", userData.token);
   };
 
   const logoutContext = () => {
